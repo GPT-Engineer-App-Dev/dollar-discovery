@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" p={0}>
+    <Container maxW="container.xl" p={0} bg="#f3f2ef">
       {/* Navigation Bar */}
       <Flex as="nav" bg="gray.800" color="white" p={4} justifyContent="space-between">
         <Heading as="h1" size="lg">
@@ -21,7 +21,7 @@ const Index = () => {
       {/* Main Content Area */}
       <Flex direction={{ base: "column", md: "row" }} p={4}>
         {/* Featured Article */}
-        <Box flex="3" p={4}>
+        <Box flex="3" p={4} bg="#f3f2ef">
           <Heading as="h2" size="xl" mb={4}>
             Featured Article
           </Heading>
@@ -31,7 +31,7 @@ const Index = () => {
         </Box>
 
         {/* Sidebar */}
-        <Box flex="1" bg="gray.100" p={4} ml={{ md: 4 }} mt={{ base: 4, md: 0 }}>
+        <Box flex="1" bg="#f3f2ef" p={4} ml={{ md: 4 }} mt={{ base: 4, md: 0 }}>
           <Heading as="h3" size="md" mb={4}>
             Trending Topics
           </Heading>
@@ -48,7 +48,7 @@ const Index = () => {
       {/* Grid of Smaller Articles */}
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4} p={4}>
         {Array.from({ length: 6 }).map((_, index) => (
-          <Box key={index} bg="gray.50" p={4} borderRadius="md" boxShadow="md">
+          <Box key={index} bg="#f3f2ef" p={4} borderRadius="md" boxShadow="md">
             <Heading as="h4" size="md" mb={2}>
               Article Title {index + 1}
             </Heading>
@@ -60,7 +60,7 @@ const Index = () => {
       </SimpleGrid>
 
       {/* Footer */}
-      <Box as="footer" bg="gray.800" color="white" p={4} mt={4}>
+      <Box as="footer" bg="#f3f2ef" color="white" p={4} mt={4}>
         <Flex justifyContent="space-between">
           <Text>&copy; 2023 Financial Times</Text>
           <Flex>
